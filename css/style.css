@@ -6,9 +6,9 @@
     --color__white-1: #e5e5e5;
     --color__black-2: #1a1a1a;
     --color__white-2: #ffffff;
+    --shadow__hover: 0.75rem 1.25rem 2.5rem rgba(97, 49, 0, 0.2);
 }
 
---shadow__hover: 0.75rem 1.25rem 2.5rem rgba(97, 49, 0, 0.2);
 
 /* !STYLE: vars */
 
@@ -92,10 +92,10 @@ h6 {
     padding: 1.25em 2em;
     line-height: 1;
     border: 1px solid var(--border-color);
-    border-radius: 0.25em;
+    border-radius: 0em;
     cursor: pointer;
     background-color: var(--bg-color);
-    webkit-appearance: none;
+    -webkit-appearance: none;
     appearance: none;
     box-shadow: none;
     transition: all 0.24s;
@@ -107,8 +107,8 @@ h6 {
 }
 
 .btn.--secondary {
-    border-color: var(--color__white-1);
-    bg-color: var(--color__white-2);
+    --border-color: var(--color__white-1);
+    --bg-color: var(--color__white-2);
 }
 
 .btn:hover {
@@ -160,7 +160,7 @@ h6 {
     background-color: var(--color__black-1);
     border-radius: 0.75em;
     padding: 0.5em 1em;
-    webkit-appearance: none;
+    -webkit-appearance: none;
     appearance: none;
     box-shadow: none;
     transition: all 0.24s;
@@ -189,3 +189,102 @@ h6 {
 }
 
 /* !STYLE: text-field*/
+
+/* STYLE: topbar*/
+
+.topbar {
+    padding: 0.75rem 0;
+    background-color: var(--color__black-1);
+}
+
+.container {
+    width: 100%;
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 2.5rem;
+}
+
+.flex {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.--just-center {
+    justify-content: center;
+}
+
+.--just-space {
+    justify-content: space-between;
+}
+
+.--just-end {
+    justify-content: flex-end;
+}
+
+.--align-str {
+    align-items: stretch;
+}
+
+.--align-center {
+    align-items: center;
+}
+
+.--align-end {
+    align-items: flex-end;
+}
+
+.logo {
+    display: block;
+}
+
+.topbar__logo {
+    width: 13.75rem;
+    height: 2rem;
+}
+
+.logo__pic {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.menu {}
+
+.topbar__menu {}
+
+.menu__list {
+    list-style: none;
+    padding: 0;
+
+}
+
+.menu__item {}
+
+.menu__item+.menu__item {
+    margin-left: 3.25rem;
+}
+
+.menu__link {}
+
+.link {
+    color: var(--color__white-2);
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.topbar__buttons {}
+
+.topbar__btn {}
+
+
+
+.header {
+    background-image: url();
+}
