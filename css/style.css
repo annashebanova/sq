@@ -141,7 +141,7 @@ h6 {
 
 
 
-/* !STYLE:btn */
+/* !STYLE: btn */
 
 /* STYLE: text-field */
 .text-field {}
@@ -214,6 +214,8 @@ h6 {
     background-color: var(--color__black-1);
     position: sticky;
     top: 0;
+    transform: translateY(0);
+    transition: transform 0.5s;
 }
 
 .container {
@@ -325,6 +327,7 @@ h6 {
     margin-left: 3.25rem;
 }
 
+/* STYLE: header*/
 .header {
     min-height: 100vh;
     background-image: url(../img/headerbg.jpg);
@@ -371,4 +374,70 @@ h6 {
 .header__btn {
     margin-top: 3rem;
 
+}
+
+/* !STYLE: header */
+
+
+.section-title {
+    font-size: 3.5rem;
+    line-height: 1;
+    font-weight: normal;
+    color: var(--color__white-2);
+
+}
+
+.piano {
+    background-position: center;
+    background-image: url(../img/mainpiano.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.piano__inner {
+    height: 30rem;
+    max-width: 24rem;
+    margin: 0 auto;
+    text-align: center;
+    flex-direction: column;
+}
+
+.piano__title {}
+
+.piano__text {
+    margin-top: 1.25rem;
+    color: var(--color__white-2);
+    text-align: center;
+    font-size: 1.25rem;
+    line-height: 1.2rem;
+}
+
+.piano__link {
+    margin-top: 1.25rem;
+    text-decoration: underline;
+}
+
+.allgrey__inner {
+    background-color: var(--color__grey-1);
+
+
+}
+
+.allgrey__title {
+    color: var(--color__white-2);
+    position: relative;
+    height: 18rem;
+    text-align: center;
+    padding-top: 5rem;
+}
+
+.allgrey__text {
+    padding-top: 13.5rem;
+    color: var(--color__white-2);
+    text-align: center;
+    font-size: 1.25rem;
+    line-height: 1.2rem;
+    flex-direction: column-reverse;
+    flex-basis: auto;
 }
