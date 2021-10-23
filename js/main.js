@@ -1,3 +1,5 @@
+//NOTE: top bar show/hide function
+
 function topBarHide() {
     let prevScrollPos = window.pageYOffset;
     window.addEventListener(
@@ -16,5 +18,18 @@ function topBarHide() {
  )
 };
 topBarHide();
+//!NOTE: top bar show/hide function
 
 AOS.init();
+
+
+const yogaSlider = new Swiper('.yoga__slider .swiper', {
+   pagination: {
+          el: ".yoga__slider .swiper-pagination",
+          type: "fraction",
+        },
+        navigation: {
+          nextEl: ".yoga__slider .swiper-button-next",
+          prevEl: ".yoga__slider .swiper-button-prev",
+        },
+});

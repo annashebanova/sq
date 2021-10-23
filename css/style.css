@@ -17,8 +17,8 @@
     font-family: 'Roboto';
     src: local('Roboto-Regular'),
         local('Roboto Regular'),
-        url(../fonts/roboto/Roboto-Regular.woff2) format('woff2'),
-        url(../fonts/roboto/Roboto-Regular.woff) format('woff');
+        url(../fonts/Roboto-Regular.woff2) format('woff2'),
+        url(../fonts/Roboto-Regular.woff) format('woff');
     font-style: normal;
     font-weight: 400;
     font-display: swap;
@@ -29,8 +29,8 @@
     font-family: 'Roboto';
     src: local('Roboto-Bold'),
         local('Roboto Bold'),
-        url(../fonts/roboto/Roboto-Bold.woff2) format('woff2'),
-        url(../fonts/roboto/Roboto-Bold.woff) format('woff');
+        url(../fonts/Roboto-Bold.woff2) format('woff2'),
+        url(../fonts/Roboto-Bold.woff) format('woff');
     font-style: normal;
     font-weight: 700;
     font-display: swap;
@@ -41,8 +41,8 @@
     font-family: 'Roboto';
     src: local('Roboto-Black'),
         local('Roboto Black'),
-        url(../fonts/roboto/Roboto-Black.woff2) format('woff2'),
-        url(../fonts/roboto/Roboto-Black.woff) format('woff');
+        url(../fonts/Roboto-Black.woff2) format('woff2'),
+        url(../fonts/Roboto-Black.woff) format('woff');
     font-style: normal;
     font-weight: 900;
     font-display: swap;
@@ -53,8 +53,8 @@
     font-family: 'Roboto';
     src: local('Roboto-Medium'),
         local('Roboto Medium'),
-        url(../fonts/roboto/Roboto-Medium.woff2) format('woff2'),
-        url(../fonts/roboto/Roboto-Medium.woff) format('woff');
+        url(../fonts/Roboto-Medium.woff2) format('woff2'),
+        url(../fonts/Roboto-Medium.woff) format('woff');
     font-style: normal;
     font-weight: 500;
     font-display: swap;
@@ -429,7 +429,7 @@ h6 {
 }
 
 .allgrey__head {
-    min-width: 40rem;
+    max-width: 40rem;
     margin: 0 auto;
 }
 
@@ -437,7 +437,7 @@ h6 {
     margin-top: 7.25rem;
     margin-left: auto;
     margin-right: auto;
-    min-width: 90rem;
+    max-width: 90rem;
 }
 
 .allgrey__title {
@@ -502,4 +502,44 @@ h6 {
     width: 100%;
     object-fit: cover;
     object-position: center;
+}
+
+.niger {
+    background-color: var(--color__white-2);
+
+}
+
+.niger__inner {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90rem;
+}
+
+
+.niger__pic {
+    height: 148.5rem;
+    flex: 0 1 41.25rem;
+}
+
+.niger__title {
+    font-size: 3.5rem;
+    font-weight: normal;
+}
+
+.niger__text {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    padding-top: 1.5rem;
+}
+
+.niger__img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.niger__wrapper {
+    flex: 0 1 24rem;
+    margin-right: 2rem;
 }
