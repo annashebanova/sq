@@ -24,6 +24,10 @@ AOS.init();
 
 
 const yogaSlider = new Swiper('.yoga__slider .swiper', {
+    autoplay: {
+        delay:5000
+    },
+    speed:1000,
    pagination: {
           el: ".yoga__slider .swiper-pagination",
           type: "fraction",
