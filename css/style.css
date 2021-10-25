@@ -505,6 +505,7 @@ h6 {
     object-position: center;
 }
 
+/* STYLE: niger */
 .niger {
     background-color: var(--color__white-2);
 
@@ -545,7 +546,9 @@ h6 {
     margin-right: 2rem;
 }
 
-/* STYLE */
+/* !STYLE: niger */
+
+/* STYLE:yoga */
 
 .yoga {
     background-color: var(--color__grey-1);
@@ -556,6 +559,7 @@ h6 {
 .yoga__inner {
     min-width: 90rem;
     margin: 0 auto;
+
 }
 
 .yoga__content {
@@ -645,4 +649,120 @@ h6 {
 
 
 
-/* !STYLE */
+/* !STYLE:yoga */
+
+/* STYLE: point */
+.point {}
+
+.point__head {
+    max-width: 40rem;
+    margin: 0 auto;
+}
+
+.point__title {
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: normal;
+    padding-top: 4rem;
+
+}
+
+.point__text {
+    text-align: center;
+    font-size: 1.25rem;
+    line-height: 1.2rem;
+    padding-top: 1.5rem;
+}
+
+.point__link {
+    font-size: 1.25rem;
+    text-align: center;
+    line-height: 4rem;
+    text-transform: uppercase;
+    color: var(--color__black-1);
+    display: block;
+    transition: color 0.24s;
+
+}
+
+.point__link:hover {
+    color: var(--color__grey-1);
+}
+
+.point__img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.point__slider {
+    margin: 0 auto;
+    padding: 5rem 0;
+    max-width: 35rem;
+}
+
+.point__slider .swiper {}
+
+.point__slider .swiper-wrapper {}
+
+.point__slider .swiper-slide {
+    height: 21.75rem;
+    width: 34rem;
+}
+
+.point__slider.swiper-pagination {
+    position: static;
+    width: auto;
+}
+
+.point__slider.swiper-button-prev {}
+
+.point__slider.swiper-button-next {}
+
+
+
+/* !STYLE: point */
+
+/* STYLE: member */
+
+.member {
+    background-color: var(--color__black-1);
+}
+
+.member__inner {
+    color: var(--color__white-2);
+    min-width: 90rem;
+    margin-top: 7.25rem;
+
+}
+
+
+
+.flex {}
+
+
+
+.member__title {}
+
+.member__link {
+    font-size: 1.25rem;
+    text-align: center;
+    line-height: 4rem;
+    text-transform: uppercase;
+    color: var(--color__grey-1);
+    display: block;
+    transition: color 0.24s;
+}
+
+.member__link:hover {
+    color: var(--color__white-2);
+}
+
+.member__list {}
+
+.member__text {
+    padding: 1rem;
+}
+
+/* !STYLE: member */

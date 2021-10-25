@@ -37,3 +37,19 @@ const yogaSlider = new Swiper('.yoga__slider .swiper', {
           prevEl: ".yoga__slider .swiper-button-prev",
         },
 });
+
+
+const pointSlider = new Swiper('.point__slider .swiper', {
+
+  pagination: {
+        el: '.point__slider .swiper-pagination',
+      type: 'fraction',
+  },
+
+  
+  navigation: {
+    nextEl: '.point__slider .swiper-button-next',
+    prevEl: '.point__slider .swiper-button-prev',
+    },
+  
+});
