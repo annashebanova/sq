@@ -732,7 +732,7 @@ h6 {
 
 .member__inner {
     color: var(--color__white-2);
-    min-width: 90rem;
+    min-width: 100rem;
     margin-top: 7.25rem;
 
 }
@@ -743,7 +743,11 @@ h6 {
 
 
 
-.member__title {}
+.member__title {
+    font-size: 3.5rem;
+    font-weight: normal;
+
+}
 
 .member__link {
     font-size: 1.25rem;
@@ -753,13 +757,16 @@ h6 {
     color: var(--color__grey-1);
     display: block;
     transition: color 0.24s;
+
 }
 
 .member__link:hover {
     color: var(--color__white-2);
 }
 
-.member__list {}
+.member__list {
+    margin: 0 20rem;
+}
 
 .member__text {
     padding: 1rem;
