@@ -738,11 +738,6 @@ h6 {
 }
 
 
-
-.flex {}
-
-
-
 .member__title {
     font-size: 3.5rem;
     font-weight: normal;
@@ -754,22 +749,23 @@ h6 {
     text-align: center;
     line-height: 4rem;
     text-transform: uppercase;
-    color: var(--color__grey-1);
-    display: block;
+    color: var(--color__white-2);
     transition: color 0.24s;
 
 }
 
 .member__link:hover {
-    color: var(--color__white-2);
+    color: var(--color__grey-1);
 }
 
 .member__list {
-    margin: 0 20rem;
+    margin: 0 20rem 7rem;
 }
 
 .member__text {
     padding: 1rem;
 }
+
+.member__item-wrapper {}
 
 /* !STYLE: member */
