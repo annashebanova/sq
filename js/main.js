@@ -1,3 +1,7 @@
+
+let rem = parseInt(window.getComputedStyle(document.querySelector('html')).fontSize);
+console.log(rem);
+
 //NOTE: top bar show/hide function
 
 function topBarHide() {
@@ -40,7 +44,9 @@ const yogaSlider = new Swiper('.yoga__slider .swiper', {
 
 
 const pointSlider = new Swiper('.point__slider .swiper', {
-
+    slidesPerView: 3,
+    spaceBetween: 2.5 * rem,
+    centeredSlides: true,
   pagination: {
         el: '.point__slider .swiper-pagination',
       type: 'fraction',
