@@ -59,3 +59,25 @@ const pointSlider = new Swiper('.point__slider .swiper', {
     },
   
 });
+
+document.querySelectorAll('.pricing__radio').forEach(el => {
+  el.addEventListener('change', switchPrice)
+});
+
+function switchPrice(e) {
+    let pricingType = e.target.id.split('-')[1];
+    const priceOutput = document.querySelectorAll('.pricing__plan-price');
+    const pricesDiscount = document.querySelectorAll('.pricing__plan-sum-discount');
+    if (pricingType === 'mounthly') {
+        priceOutput[0].innerText = 10;
+        priceOutput[1].innerText = 20;
+        priceOutput[2].innerText = 40;
+        pricesDiscount.forEach(el => el.style.display = 'none');
+    }
+    else {
+        priceOutput[0].innerText = 9;
+        priceOutput[1].innerText = 18;
+        priceOutput[2].innerText = 35;
+        pricesDiscount.forEach(el => el.removeAttribute('style'));
+    }
+};

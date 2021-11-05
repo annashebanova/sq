@@ -2,10 +2,12 @@
 :root {
     --color__grey-1: #60777C;
     --color__grey-2: #aaaaaa;
+    --color__grey-3: #ebebeb;
     --color__black-1: #000000;
     --color__white-1: #e5e5e5;
     --color__black-2: #1a1a1a;
     --color__white-2: #ffffff;
+    --color__blue: #0074c2;
     --color__white__alpha: rgba(255, 255, 255, 0.27);
     --shadow__hover: 0.75rem 1.25rem 2.5rem rgba(97, 49, 0, 0.2);
 }
@@ -800,6 +802,7 @@ h6 {
     color: var(--color__white-2);
     transition: color 0.24s;
     padding-right: 1.5em;
+    position: relative;
 
 }
 
@@ -840,3 +843,121 @@ h6 {
 
 
 /* !STYLE: member */
+
+/* STYLE: pricing */
+.pricing {
+    padding: 5rem 0;
+}
+
+.pricing__inner {}
+
+.pricing__title {
+    font-size: 2.5rem;
+    min-width: 17.75rem;
+    color: var(--color__black-1);
+}
+
+.pricing__descr {
+    min-width: 17.75rem;
+    margin-top: 1.5rem;
+    font-size: 1.25rem;
+}
+
+.pricing__pricing {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    margin-top: 3.5rem;
+
+}
+
+.pricing__pricing-switcher {}
+
+.pricing__switcher-item {
+    display: block;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.pricing__switcher-item+.pricing__switcher-item {
+    margin-top: 0.75rem;
+}
+
+.pricing__radio {}
+
+.pricing__switcher-descr {
+    color: var(--color__grey-2);
+    transition: color 0.24s;
+}
+
+.pricing__switcher-sup {
+    color: var(--color__blue);
+}
+
+.pricing__radio:checked~.pricing__switcher-descr {
+    color: var(--color__black-1);
+}
+
+.pricing__plan {
+    max-width: 4.75rem;
+    text-align: center;
+    justify-self: center;
+}
+
+.pricing__plan-title {}
+
+.pricing__plan-sum {
+    display: block;
+    text-align: center;
+
+}
+
+.pricing__plan-price {
+    display: block;
+    font-size: 2rem;
+    position: relative;
+    width: fit-content;
+    margin: 1rem auto 0;
+}
+
+.pricing__plan-price::before {
+    content: "$";
+    position: absolute;
+    right: 100%;
+    top: 0.25rem;
+    font-size: 0.75rem;
+}
+
+
+.pricing__plan-sum-sub {
+    display: block;
+    margin-top: 0.25rem;
+
+}
+
+.pricing__plan-sum-discount {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--color__blue);
+    margin-top: 0.25rem;
+}
+
+.pricing__contain-title {
+    grid-column: 1 / -1;
+    margin-top: 3.75rem;
+    font-size: 0.75rem;
+    opacity: 0.5;
+    text-transform: uppercase;
+}
+
+.pricing__plan-contain-item {
+    padding: 0.75rem 0 1rem;
+    border-bottom: 1px solid var(--color__grey-3);
+}
+
+.pricing__contain-point {
+    padding: 0.75rem 0 1rem;
+    text-align: center;
+    border-bottom: 1px solid var(--color__grey-3);
+}
+
+/* !STYLE: pricing */
