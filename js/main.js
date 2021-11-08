@@ -81,3 +81,37 @@ function switchPrice(e) {
         pricesDiscount.forEach(el => el.removeAttribute('style'));
     }
 };
+// NOTE:faq items
+
+const faqItems = document.querySelectorAll('.faq__item');
+
+faqItems.forEach(el => {
+    el.addEventListener('click', faqSlide);
+});
+
+function faqSlide(e) {
+    const content = this.querySelector('.faq__item-content');
+    e.preventDefault();
+    if (!this.hasAttribute('open')) {
+        faqItems.forEach(item => {
+            item.querySelector('.faq__item-content').removeAttribute("style");
+        setTimeout(() => {
+            item.removeAttribute('open');
+            this.setAttribute('open', '');
+            this.scrollIntoView({
+                blok: "center",
+                behavior: 'smooth'
+            });
+        setTimeout(() => {
+            content.style.height = content.scrollHeight + "px";
+            content.style.marginTop = "2rem";
+        }, 50);
+        }, 240);
+        });       
+   } else {
+        content.removeAttribute("style");
+        setTimeout(() => {
+            this.removeAttribute('open');
+        }, 240);
+}
+}

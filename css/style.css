@@ -963,26 +963,133 @@ h6 {
 .pricing__head {
     padding: 4rem 0;
     font-size: 1.75rem;
-    position: relative;
 
 }
 
 .pricing__list {
-    list-style-type: circle;
+    list-style-type: "✔️";
     column-count: 2;
-    position: absolute;
+    column-gap: 4.75rem;
     right: 0;
-    height: 25vh;
-    margin: auto 2.5rem;
-
-
+    margin: 2.5rem 0 0 auto;
+    max-width: 56rem;
 }
 
 .pricing__text {
     font-size: 1.25rem;
     max-width: 21.75rem;
+    padding-left: 1rem;
+}
 
-
+.pricing__text+.pricing__text {
+    margin-top: 1rem;
 }
 
 /* !STYLE: pricing */
+
+/* STYLE: faq */
+.faq {
+    background-color: var(--color__black-1);
+    padding: 5rem 0;
+}
+
+.faq__title {
+    text-align: center;
+    max-width: 21rem;
+    margin: 0 auto;
+    font-size: 2.5rem;
+}
+
+.faq__inner {
+    margin-top: 2.75rem;
+    color: var(--color__white-2);
+}
+
+.faq__item {
+    padding: 1.5rem 0 1.25rem;
+    border-color: var(--color__grey-2);
+    border-width: 1px 0;
+    border-style: solid;
+    max-width: 55.5rem;
+    margin: 0 auto;
+}
+
+.faq__item-title {
+    font-size: 1.5em;
+    line-height: 1.2;
+    cursor: pointer;
+    appearance: none;
+    padding: 0 3rem 0 0;
+    list-style: none;
+    position: relative;
+}
+
+.faq__item-title::marker,
+.faq__item-title::-webkit-details-marker {
+    display: none;
+}
+
+.faq__item-title::before,
+.faq__item-title::after {
+    content: "";
+    height: 2px;
+    width: 1.5rem;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    background-color: var(--color__white-2);
+}
+
+.faq__item-title::before {
+    transform: translateY(-50%);
+}
+
+.faq__item-title::after {
+    transform: translateY(-50%) rotate(90deg);
+    transition: all 0.24s;
+}
+
+.faq__item[open] .faq__item-title::after {
+    transform: translateY(-50%) rotate(0);
+    opacity: 0;
+}
+
+.faq__item-content {
+    margin-top: 0;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.24s;
+}
+
+.faq__item-text {
+    line-height: 1.25;
+}
+
+.faq__item-text+.faq__item-text {
+    margin-top: 1em;
+}
+
+/* !STYLE: faq */
+
+/* STYLE: platform */
+
+.platform {
+    background-color: var(--color__black-1);
+    border-color: var(--color__grey-2);
+    border-width: 1px 0;
+    border-style: solid;
+}
+
+.platform__inner {
+    padding: 4.5rem 0;
+}
+
+.platform__title {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    max-width: 45.25rem;
+}
+
+.platform__btn {}
+
+/* !STYLE: platform */
