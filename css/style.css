@@ -1072,6 +1072,44 @@ h6 {
 /* !STYLE: faq */
 
 /* STYLE: support */
+.support {
+    padding: 5rem 0;
+    background-color: var(--color__black-1);
+}
+
+.support__inner {}
+
+.support__tabs {
+    flex: 0 1 100%;
+}
+
+.support__tab {
+    display: none;
+    opacity: 0;
+    transition: all 0.24s;
+}
+
+.support__tab-content {}
+
+.support__form {}
+
+.support__form-field {}
+
+.support__input.--text {}
+
+.support__btn {}
+
+.support__descr {
+    margin-left: 2rem;
+    flex: 0 1 34rem;
+    flex-direction: column;
+}
+
+.support__title {}
+
+.support__text {}
+
+.support__tab-btn {}
 
 /* !STYLE: support */
 

@@ -115,3 +115,24 @@ function faqSlide(e) {
         }, 240);
 }
 }
+
+document.querySelectorAll('.support__tab-btn').forEach(el => {
+    el.addEventListener('click', showTabs)
+});
+
+
+function showTabs(e) {
+    let tabNo = e.target.dataset.tab_select;
+    let thisTab = document.querySelector(`.support__tab[data-tab="${tabNo}"]`);
+    const tabs = document.querySelectorAll('.support__tab');
+    tabs.forEach(el => {
+        el.style.opacity = 0;
+        setTimeout(() => {
+            el.style.display = "none";
+        }, 240);
+    });
+    setTimeout(() => {
+        thisTab.style.display = "blok";
+        thisTab.style.opacity = 1;
+    }, 240);
+}
