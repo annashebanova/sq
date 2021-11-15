@@ -1093,7 +1093,9 @@ h6 {
 
 .support__form {}
 
-.support__form-field {}
+.support__form-field {
+    display: block;
+}
 
 .support__input.--text {}
 
@@ -1107,9 +1109,16 @@ h6 {
 
 .support__title {}
 
-.support__text {}
+.support__text {
+    color: var(--color__white-2);
+    margin-top: 1.5em;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+}
 
-.support__tab-btn {}
+.support__tab-btn {
+    margin-top: 1rem;
+}
 
 /* !STYLE: support */
 
@@ -1135,3 +1144,40 @@ h6 {
 .platform__btn {}
 
 /* !STYLE: platform */
+
+/* STYLE:footer */
+
+.footer {
+    background-color: var(--color__black-1);
+    padding: 5rem 0;
+
+}
+
+.footer__inner {}
+
+.footer__item {}
+
+.footer__pic {}
+
+.footer__btn {
+    padding-bottom: 1.5rem;
+}
+
+.footer__title {
+    color: var(--color__white-1);
+    margin-bottom: 1.5rem;
+}
+
+.footer__text {
+    color: var(--color__white-1);
+}
+
+.footer__title+.footer__title {
+    margin-right: 7.5rem;
+}
+
+.footer__text+.footer__text {
+    margin-right: 3.25rem;
+}
+
+/* !STYLE: footer */

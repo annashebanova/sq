@@ -132,7 +132,7 @@ function showTabs(e) {
         }, 240);
     });
     setTimeout(() => {
-        thisTab.style.display = "blok";
+        thisTab.style.display = "block";
         thisTab.style.opacity = 1;
     }, 240);
 }
