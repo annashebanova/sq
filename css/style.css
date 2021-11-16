@@ -1081,6 +1081,7 @@ h6 {
 
 .support__tabs {
     flex: 0 1 100%;
+
 }
 
 .support__tab {
@@ -1157,19 +1158,28 @@ h6 {
 
 .footer__item {}
 
-.footer__pic {}
+.footer__pic {
+    display: block;
+    margin-bottom: 1.5rem;
+}
 
 .footer__btn {
-    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .footer__title {
     color: var(--color__white-1);
     margin-bottom: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    overflow: hidden;
 }
 
 .footer__text {
     color: var(--color__white-1);
+    font-size: 1rem;
+    overflow: hidden;
+    line-height: 1.5rem;
 }
 
 .footer__title+.footer__title {
