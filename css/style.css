@@ -1167,6 +1167,10 @@ h6 {
     margin-bottom: 1.5rem;
 }
 
+.footer__way {
+    color: inherit;
+}
+
 .footer__title {
     color: var(--color__white-1);
     margin-bottom: 1.5rem;
