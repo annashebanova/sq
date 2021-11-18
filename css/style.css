@@ -114,6 +114,12 @@ h6 {
     --bg-color: var(--color__white-2);
 }
 
+.btn.--grey {
+    --border-color: var(--color__black-2);
+    --bg-color: var(--color__black-2);
+    --text-color: var(--color__white-1);
+}
+
 .btn:hover {
     --bg-color: var(--color__grey-1);
     --text-color: var(--color__white-2);
@@ -1156,15 +1162,38 @@ h6 {
 
 .footer__inner {}
 
-.footer__item {}
+.footer__item {
+    display: flex;
+    flex-direction: column;
+    width: 10rem;
+}
 
 .footer__pic {
     display: block;
-    margin-bottom: 1.5rem;
 }
 
 .footer__btn {
-    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    text-align: left;
+    display: block;
+    text-transform: uppercase;
+    position: relative;
+    width: 100%;
+    padding: 1em;
+}
+
+.footer__btn::after {
+    position: absolute;
+    content: "";
+    background-image: url(../img/way.svg);
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 1em;
+    width: 1em;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .footer__way {
@@ -1179,10 +1208,14 @@ h6 {
     overflow: hidden;
 }
 
+.footer__list {
+    list-style: none;
+    padding: 0;
+}
+
 .footer__text {
     color: var(--color__white-1);
     font-size: 1rem;
-    overflow: hidden;
     line-height: 1.5rem;
 }
 
@@ -1192,6 +1225,16 @@ h6 {
 
 .footer__text+.footer__text {
     margin-right: 3.25rem;
+}
+
+.footer__link {
+    color: var(--color__white-1);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.footer__link:hover {
+    text-decoration: underline;
 }
 
 /* !STYLE: footer */
