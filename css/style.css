@@ -1094,19 +1094,68 @@ h6 {
     display: none;
     opacity: 0;
     transition: all 0.24s;
+    height: 100%;
 }
 
-.support__tab-content {}
+.support__tab-content {
+    height: 100%;
+}
 
-.support__form {}
+.support__form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 40rem;
+    padding: 0 2rem;
+    margin: 0 auto;
+}
 
 .support__form-field {
     display: block;
+    width: 100%;
 }
 
-.support__input.--text {}
+.support__form-field+.support__form-field {
+    margin-top: 2rem;
+}
 
-.support__btn {}
+.support__input {
+    display: block;
+    width: 100%;
+    color: var(--color__grey-2);
+    box-shadow: none;
+    appearance: none;
+    border: none;
+    border-bottom: 2px solid var(--color__grey-1);
+    padding: 0.5em 1em;
+    font-size: 1.25rem;
+    background-color: transparent;
+    transition: all 0.24s;
+}
+
+.support__input::placeholder {
+    opacity: 0.5;
+}
+
+.support__input:hover,
+.support__input.--text:focus {
+    background-color: var(--color__black-2);
+}
+
+.support__input:focus,
+.support__input:focus-visible {
+    outline: transparent;
+    border-bottom-color: var(--color__white-2);
+}
+
+.support__input.--text {
+    min-height: 15em;
+}
+
+
+.support__btn {
+    margin-top: 2rem;
+}
 
 .support__descr {
     margin-left: 2rem;
@@ -1125,6 +1174,12 @@ h6 {
 
 .support__tab-btn {
     margin-top: 1rem;
+    text-decoration: underline;
+}
+
+.support__calendar {
+    height: 100%;
+    width: 100%;
 }
 
 /* !STYLE: support */
