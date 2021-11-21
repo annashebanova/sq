@@ -136,3 +136,33 @@ function showTabs(e) {
         thisTab.style.opacity = 1;
     }, 240);
 }
+
+
+const popup = document.querySelector('.popup'),
+    overlay = document.querySelector('.overlay'),
+    body = document.querySelector('body'),
+    popIn = document.querySelector('.popup__inner'),
+    closeBtn = document.querySelectorAll('.js-popup-close');
+closeBtn.forEach(el => el.addEventListener('click', popupClose));
+
+   let popupShow = setInterval(() => {
+        popupOpen();
+    }, 5000);
+function popupOpen() {
+    popup.style.display = 'block';
+    body.style.overflow = 'hidden';
+    setTimeout(() => {
+        overlay.style.opacity = 1;
+        popIn.style.opacity = 1;
+    }, 1);
+    
+ }
+function popupClose() {
+    clearInterval(popupShow);
+ overlay.style.opacity = 0;
+        popIn.style.opacity = 0;  
+    setTimeout(() => {
+        popup.removeAttribute('style');
+    body.removeAttribute('style');
+    }, 240);
+ }

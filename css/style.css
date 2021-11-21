@@ -1293,3 +1293,71 @@ h6 {
 }
 
 /* !STYLE: footer */
+
+/* STYLE:popup */
+
+
+.popup {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(1rem);
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.24s;
+}
+
+.popup__inner {
+    position: absolute;
+    padding: 3.5rem 2rem 2rem;
+    background-color: var(--color__white-1);
+    border-radius: 1rem;
+    max-height: 50rem;
+    max-width: 50rem;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.24s;
+}
+
+.popup__close {
+    position: absolute;
+    right: 2rem;
+    top: 1rem;
+}
+
+.popup__pic {
+    width: 100%;
+    height: 25rem;
+}
+
+.popup__img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: center top;
+}
+
+.popup__title {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.popup__text {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+/* !STYLE: popup */
