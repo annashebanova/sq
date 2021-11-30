@@ -406,6 +406,7 @@ h6 {
     border-radius: 3px;
     display: block;
     left: 0;
+    transition: all 0.24s;
 }
 
 .topbar__burger-string {
@@ -434,6 +435,8 @@ h6 {
     width: 100vw;
     background-color: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(1rem);
+    transform: translateY(-150%);
+    transition: transform cubic-bezier(.07, 1.52, .65, .73) 1s;
 }
 
 .topbar__mobile-inner {
@@ -463,7 +466,25 @@ h6 {
     margin-top: 2rem;
 }
 
+.topbar.--open {}
 
+.topbar.--open .topbar__burger-string {
+    background-color: transparent;
+}
+
+.topbar.--open .topbar__burger-string::before {
+    top: 0;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.topbar.--open .topbar__burger-string::after {
+    bottom: 0;
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+.topbar__mobile.--open .topbar__mobile-menu {
+    transform: translateY(0);
+}
 
 /* STYLE: header*/
 .header {

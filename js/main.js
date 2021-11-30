@@ -165,4 +165,13 @@ function popupClose() {
         popup.removeAttribute('style');
     body.removeAttribute('style');
     }, 240);
- }
+}
+ 
+  const burger = document.querySelector('.topbar__burger');
+const mobileMenu = document.querySelector('.topbar__mobile');
+const mobileOverlay = document.querySelector('.topbar__mobile-menu');
+
+burger.addEventListener('click', () => mobileMenu.classList.toggle('--open'));
+    
+mobileOverlay.addEventListener('click', () => mobileMenu.classList.remove('open'));
+
