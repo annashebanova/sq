@@ -173,5 +173,5 @@ const mobileOverlay = document.querySelector('.topbar__mobile-menu');
 
 burger.addEventListener('click', () => mobileMenu.classList.toggle('--open'));
     
-mobileOverlay.addEventListener('click', () => mobileMenu.classList.remove('open'));
+mobileOverlay.addEventListener('click', () => mobileMenu.classList.remove('--open'));
 
