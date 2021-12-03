@@ -1305,9 +1305,22 @@ h6 {
 
 .support__inner {}
 
+@media screen and (max-width: 1023px) {
+    .support__inner {
+        flex-direction: column-reverse;
+    }
+}
+
 .support__tabs {
     flex: 0 1 100%;
+}
 
+@media screen and (max-width: 1023px) {
+    .support__tabs {
+        width: 100%;
+        flex: 0 0 auto;
+        margin-top: 3rem;
+    }
 }
 
 .support__tab {
@@ -1319,6 +1332,12 @@ h6 {
 
 .support__tab-content {
     height: 100%;
+}
+
+.support__tab-pic {
+    width: 100%;
+    object-fit: contain;
+    max-width: 40rem;
 }
 
 .support__form {
@@ -1381,6 +1400,14 @@ h6 {
     margin-left: 2rem;
     flex: 0 1 34rem;
     flex-direction: column;
+}
+
+@media screen and (max-width: 1023px) {
+    .support__descr {
+        width: 100%;
+        flex: 0 0 auto;
+        margin-left: 0;
+    }
 }
 
 .support__title {}
