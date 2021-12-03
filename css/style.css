@@ -767,6 +767,13 @@ h6 {
     width: 100%;
     object-fit: cover;
     object-position: center;
+    max-height: 40.5rem;
+}
+
+@media screen and (max-width: 1023px) {
+    .niger__pic {
+        width: 100%;
+    }
 }
 
 .niger__wrapper {
