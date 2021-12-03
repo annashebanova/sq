@@ -534,13 +534,25 @@ h6 {
     line-height: 1;
 }
 
+@media screen and (max-width: 991px) {
+    .header__title {
+        font-size: 2rem;
+        width: 5rem;
+    }
+}
+
 .header__text {
     margin-top: 1.5rem;
     font-size: 1.5rem;
     color: var(--color__white-2);
     line-height: 1.2;
+}
 
-
+@media screen and (max-width: 991px) {
+    .header__text {
+        font-size: 1rem;
+        width: 8rem;
+    }
 }
 
 .header__btn {
@@ -576,6 +588,12 @@ h6 {
 }
 
 .piano__title {}
+
+@media screen and (max-width: 991px) {
+    .piano__title {
+        font-size: 2em;
+    }
+}
 
 .piano__text {
     margin-top: 1.25rem;
